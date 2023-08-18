@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendor Details</title>
+    <link rel="stylesheet" href="Vendorstyle.css">
+
+</head>
+<body>
+    <div class="card">
+        <h1 style="text-align: center; margin-bottom: 20px;">Submit Details</h1>
+        <form id="myForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required maxlength="100">
+            
+            <label for="country">Country Code:</label>
+            <select id="country" name="country">
+                <option value="+91">+91 (India)</option>
+                <option value="+1">+1 (United States)</option>
+                <!-- Add more options as needed -->
+            </select>
+            
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" name="mobile" required pattern="[0-9]{10}" placeholder="10-digit number">
+            
+            <label for="gst">GST:</label>
+            <input type="text" id="gst" name="gst">
+            
+            <button type="submit">Submit</button>
+        </form>
+        <div id="message"></div>
+    </div>
+
+    <script src="Vendorform.js"></script>
+
+</body>
+</html>
